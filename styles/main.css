@@ -259,7 +259,7 @@
 }
 
 .profile div::before {
-    content: url("./../../images/profile-shape.svg");
+    content: url("./../images/profile-shape.svg");
     position: absolute;
     left: 50%;
     top: -18px;
@@ -294,7 +294,7 @@
 }
 
 .resume::before {
-    content: url("./../../images/resume-shape.svg");
+    content: url("./../images/resume-shape.svg");
     position: absolute;
     left: 50%;
     top: -1.5px;
