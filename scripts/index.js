@@ -7,20 +7,17 @@ const Themes = {
 const root = document.documentElement;
 const button = document.querySelector("#theme-toggle-button");
 
-const toggleTheme = () => {
+function toggleTheme() {
     const theme = root.getAttribute(THEME_ATTRIBUTE);
+    const newTheme = theme === Themes.LIGHT ? Themes.DARK : Themes.LIGHT;
 
-    root.setAttribute(
-        THEME_ATTRIBUTE,
-        theme === Themes.LIGHT ? Themes.DARK : Themes.LIGHT,
-    );
-
+    root.setAttribute(THEME_ATTRIBUTE, newTheme);
     button.classList.toggle("header__button_active");
-};
+}
 
-const handleButtonClick = (event) => {
+function handleButtonClick(event) {
     event.preventDefault();
     toggleTheme();
-};
+}
 
 button.addEventListener("click", handleButtonClick);
