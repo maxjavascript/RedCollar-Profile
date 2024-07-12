@@ -183,9 +183,17 @@
     width: 17px;
     left: 3px;
     bottom: 3px;
-    background-color: var(--palette-white);
+    background-size: cover;
     border-radius: 50%;
     transition: transform 0.4s;
+}
+
+html[data-theme="dark"] .header__button:before {
+    background-image: url('./../images/moon.svg');
+}
+
+html[data-theme="light"] .header__button:before {
+    background-image: url('./../images/sun.svg');
 }
 
 .header__button_active {
@@ -224,7 +232,6 @@
 .layout_profile {
     gap: 20px;
     min-height: 780px;
-
 }
 
 @media (min-width: 768px) {
@@ -326,8 +333,6 @@
         border-top-right-radius: 24px;
     }
 }
-
-
 
 .resume {
     position: relative;
@@ -437,7 +442,7 @@
     flex-direction: column;
 }
 
-/*Tokens*/
+/* Tokens */
 :root {
     --palette-black: #000000;
     --palette-gray: #666666;
