@@ -1,0 +1,17 @@
+.text {}
+
+.text--heading-1 {
+    font: var(--font-heading-1);
+}
+
+.text--heading-2 {
+    font: var(--font-heading-2);
+}
+
+.text--paragraph-main {
+    font: var(--font-paragraph-main);
+}
+
+.text--paragraph-description {
+    font: var(--font-paragraph-description);
+}
