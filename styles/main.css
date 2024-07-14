@@ -42,10 +42,10 @@
     --color-bg-primary: var(--palette-black);
     --color-bg-accent: var(--palette-red);
 
-    --font-h1: normal 700 16px/24px 'Redcollar', Helvetica, Arial, sans-serif;
-    --font-h2: normal 700 16px/20px 'Redcollar', Helvetica, Arial, sans-serif;
-    --font-p1: normal 400 16px/20px 'TT Commons', Helvetica, Arial, sans-serif;
-    --font-p2: normal 400 16px/20px 'TT Commons', Helvetica, Arial, sans-serif;
+    --font-h1: normal 700 24px/28px 'Redcollar', Helvetica, Arial, sans-serif;
+    --font-h2: normal 700 16px/16px 'Redcollar', Helvetica, Arial, sans-serif;
+    --font-p1: normal 400 20px/20px 'TT Commons', Helvetica, Arial, sans-serif;
+    --font-p2: normal 400 18px/24px 'TT Commons', Helvetica, Arial, sans-serif;
 
     --unit-spacing: 8px;
 }
@@ -87,28 +87,28 @@
     color: var(--color-text-secondary);
 }
 
-.text_template_h1 {
+.text_style_h1 {
     font: var(--font-h1);
 }
 
-.text_template_h2 {
+.text_style_h2 {
     font: var(--font-h2);
 }
 
-.text_template_p1 {
+.text_style_p1 {
     font: var(--font-p1);
 }
 
-.text_template_p2 {
+.text_style_p2 {
     font: var(--font-p2);
 }
 
-.text_template_link {
+.text_style_link {
     color: inherit;
     text-decoration: none;
 }
 
-.text_template_link:hover {
+.text_style_link:hover {
     text-decoration: underline;
 }
 
@@ -399,59 +399,10 @@ html[data-theme="light"] .header__button:before {
     }
 }
 
-.text {
-    margin: 0;
-}
-
-.text_color_primary {
-    color: var(--color-text-primary);
-}
-
-.text_color_secondary {
-    color: var(--color-text-secondary);
-}
-
-.text_template_h1 {
-    font: var(--font-h1);
-}
-
-.text_template_h2 {
-    font: var(--font-h2);
-}
-
-.text_template_p1 {
-    font: var(--font-p1);
-}
-
-.text_template_p2 {
-    font: var(--font-p2);
-}
-
-.text_template_link {
-    color: inherit;
-    text-decoration: none;
-}
-
-.text_template_link:hover {
-    text-decoration: underline;
-}
-
 .wrapper {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-}
-
-/* Tokens */
-:root {
-    --palette-black: #000000;
-    --palette-gray: #666666;
-    --palette-red: #f51b1b;
-    --palette-white: #ffffff;
-    --font-h1: normal 700 16px/24px 'Redcollar', Helvetica, Arial, sans-serif;
-    --font-h2: normal 700 16px/20px 'Redcollar', Helvetica, Arial, sans-serif;
-    --font-p1: normal 400 16px/20px 'TT Commons', Helvetica, Arial, sans-serif;
-    --unit-spacing: 8px;
 }
 
 html[data-theme="light"] {
